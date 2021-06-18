@@ -18,7 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Change to Db Dir
-      run: cd TestDb
+      run: cd TestDb      
+    - name: Ls
+      run: ls
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
